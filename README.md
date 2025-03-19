@@ -7,8 +7,8 @@ Then in the nginx config we define `upstream` (multiple destinations), so we can
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/arkma/ngxing-loadbalancer.git
-    cd ngxing-loadbalancer
+    git clone https://github.com/arkma/load-balancer-example.git
+    cd load-balancer-example
     ```
 
 3. **Build the containers:**

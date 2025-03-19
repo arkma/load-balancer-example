@@ -5,7 +5,7 @@ services:
     build: ./backend
     container_name: backend1
     environment:
-      - FLASK_APP=dashboard
+      - FLASK_APP=backend
       - FLASK_RUN_HOST=0.0.0.0
       - FLASK_DEBUG=1
     volumes:
@@ -15,7 +15,7 @@ services:
     build: ./backend
     container_name: backend2
     environment:
-      - FLASK_APP=dashboard
+      - FLASK_APP=backend
       - FLASK_RUN_HOST=0.0.0.0
       - FLASK_DEBUG=1
     volumes:
@@ -24,7 +24,7 @@ services:
     build: ./backend
     container_name: backend3
     environment:
-      - FLASK_APP=dashboard
+      - FLASK_APP=backend
       - FLASK_RUN_HOST=0.0.0.0
       - FLASK_DEBUG=1
     volumes:
