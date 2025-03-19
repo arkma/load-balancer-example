@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  backend1:
+    build: ./backend
+    container_name: backend1
+    environment:
+      - FLASK_APP=dashboard
+      - FLASK_RUN_HOST=0.0.0.0
+      - FLASK_DEBUG=1
+    volumes:
+      - ./backend:/app
+
+  backend2:
+    build: ./backend
+    container_name: backend2
+    environment:
+      - FLASK_APP=dashboard
+      - FLASK_RUN_HOST=0.0.0.0
+      - FLASK_DEBUG=1
+    volumes:
+      - ./backend:/app
+  backend3:
+    build: ./backend
+    container_name: backend3
+    environment:
+      - FLASK_APP=dashboard
+      - FLASK_RUN_HOST=0.0.0.0
+      - FLASK_DEBUG=1
+    volumes:
+      - ./backend:/app
+
+  frontend:
+    build: ./nginx
+    container_name: nginx
+    ports:
+      - "80:80"
