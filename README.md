@@ -1,4 +1,4 @@
-# Example Dashboard Application
+# Example load balancer
 This example shows how basic load balancer works, based on nginx.
 In backend we define some unique id via `uuid` that is returned in `/api/hello` endpoint.
 
